@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=jhonathan
+      - POSTGRES_PASSWORD=castvna88
+      - POSTGRES_DB=bank
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./localdb/first:/docker-entrypoint-initdb.d
