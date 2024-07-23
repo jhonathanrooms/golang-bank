@@ -1,0 +1,10 @@
+services:
+  auth:
+    host: localhost
+    port: 8001
+  transactions:
+    host: localhost
+    port: 8002
+  users:
+    host: localhost
+    port: 8003
